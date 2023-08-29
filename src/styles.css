@@ -1,0 +1,58 @@
+/* src/styles.css */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  width: calc(33.33% - 20px); /* Three cards per row */
+  box-sizing: border-box;
+
+background: #390554;
+border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* One card per row on smaller screens */
+  }
+}
+
+.section-heading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.field-name {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  display: inline;
+  align-items: center;
+  color: #F5F5F5;
+}
+
+.field-value {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  display: inline;
+  align-items: center;
+  color: #F5F5F5;
+}
